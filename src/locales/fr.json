@@ -1,4 +1,55 @@
 {
-  "home_title":"HOME111",
-  "btn_guide":"GUIDE"
+  "nav":{
+    "home":"HOME",
+    "tool":"TOOL",
+    "lang": "EN"
+  },
+  "home":{
+    "title" : "Questionnaire Origin and Development Appraisal tool111"
+  },
+  "tool": {
+  	"introduction":"The questionnaires’ origin (sources from which elements of the questionnaire are derived) and initial development (process of making a questionnaire from elements) should be assessed before their measurement properties. To develop the Questionnaire Origin and Development Appraisal (QODA) tool, we first developed QODA version-one from psychometric tool development guidelines, and pilot tested it, resulting in QODA version-two. Second, we performed a review that identified six CATs that evaluate origin and initial development. A pool of items was derived from these six CATs and QODA version-two. Using a nominal group method, this item pool was reduced and QODA version-three (20 items) was developed. The QODA may be useful to academic librarians who assist researchers and students from various disciplines. Information professionals including research trainees can learn how to use QODA and ensure sound questionnaire origin and initial development. This will improve the accuracy of data collected in research and professional practice (e.g., information service evaluation)."
+  },
+  "qoda": [
+      {
+        "title": "Initial development (construct & item specification)111",
+        "content": [
+          "1. The definition of the construct(s) measured by the questionnaire is/are appropriate.111",
+          "2. The target population is appropriate.",
+          "3. The purpose of the questionnaire is appropriate.",
+          "4. The response scale(s) is/are appropriate.",
+          "5. There is coherence between dimensions and the construct.",
+          "6. There is coherence between dimensions and items.",
+          "7. There is coherence between items and response scale(s)."
+        ]
+      },
+      {
+        "title": "Origin (construct & item & function sources)",
+        "content": [
+          "8. Dimensions and items are derived from the input of content experts who are not the intended users of the questionnaire.",
+          "9. Dimensions and items are derived from the practical experience of the intended users of the questionnaire.",
+          "10. Dimensions and items are derived from other questionnaires relevant to the construct.",
+          "11. Dimensions and items are derived from a conceptual framework or theory relevant to the construct.",
+          "12. Dimensions and items are derived from empirical studies relevant to the construct.",
+          "13. The purpose of the questionnaire is supported by theoretical and/or empirical work(s)."
+        ]
+      },
+      {
+        "title": "Origin (methodological quality of studies on origin of construct of items)",
+        "content": [
+          "14. The questionnaire development study was performed in a sample representing the target population."
+        ]
+      },
+      {
+        "title": "Initial development (clarity of construct & items; specification of responses & scales & instructions )",
+        "content": [
+          "15. Information on the questionnaire development phase is provided (Screening Q).",
+          "16. The rationale for any modification of dimensions was appropriate.",
+          "17. The rationale for any modification of items was appropriate.",
+          "18. The rationale for transforming data (such as weighting and standardization) is appropriate.",
+          "19. The instructions for administering and scoring the questionnaire are clear and complete.",
+          "20. The instructions for completing the questionnaire are clear and complete."
+        ]
+      }
+    ]
 }

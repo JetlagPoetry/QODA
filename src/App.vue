@@ -4,36 +4,41 @@
       app
       color="primary"
       dark
+      flat
     >
+
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
+          alt="QODA"
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          src="./assets/logo.png"
+          width="200"
         />
       </div>
-      {{$t('home_title')}}
+
       <v-spacer></v-spacer>
 
       <v-btn
-        @click="changeLanguage"
-        target="_blank"
+        @click="toHOME"
         text
       >
-        <span class="mr-2">Change Language</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">{{$t('nav.home')}}</span>
+      </v-btn>
+      <v-btn
+        @click="toQODA"
+        text
+      >
+        <span class="mr-2">{{$t('nav.tool')}}</span>
+      </v-btn>
+      
+      <v-btn
+        @click="changeLanguage"
+        text
+      >
+        <span class="mr-2">{{$t('nav.lang')}}</span>
+        <v-icon><v-icon>mdi-earth</v-icon></v-icon>
       </v-btn>
     </v-app-bar>
 
@@ -56,6 +61,12 @@ export default {
   }),
 
   methods: {
+    toHOME() {
+      this.$router.push('/').catch(err => err);
+    },
+    toQODA() {
+      this.$router.push('/qoda').catch(err => err);
+    },
     changeLanguage(){
       if(this.$i18n.locale==='fr'){
         this.$i18n.locale='en';
